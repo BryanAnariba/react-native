@@ -28,12 +28,24 @@ export default function App() {
   return (
     <WebView
       style={styles.container}
-      source={{ uri: 'http://10.0.250.137:8080/HonduenviosJavaEnvironment/servlet/com.honduenvios.login' }}
+      source={{ uri: 'https://10.0.250.137:8443/HonduenviosJavaEnvironment/servlet/com.honduenvios.login' }}
       javaScriptEnabled={true}
       mediaPlaybackRequiresUserAction={false}
       allowFileAccess={true}
       scalesPageToFit={true}
       originWhitelist={['*']}
+      // onShouldStartLoadWithRequest={(event) => {
+      //   // Aquí puedes inspeccionar la solicitud antes de que se cargue y permitir o bloquearla.
+      //   return true;
+      // }}
+      // onError={(syntheticEvent) => {
+      //   const { nativeEvent } = syntheticEvent;
+      //   console.warn('WebView error: ', nativeEvent);
+      // }}
+      // onHttpError={(syntheticEvent) => {
+      //   const { nativeEvent } = syntheticEvent;
+      //   console.warn('HTTP error: ', nativeEvent);
+      // }}
     />
   );
 }
