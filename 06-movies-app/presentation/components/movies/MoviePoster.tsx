@@ -1,3 +1,4 @@
+import { router } from "expo-router";
 import { Image, Pressable } from "react-native";
 
 interface MoviePosterProps {
@@ -11,6 +12,7 @@ export const MoviePoster = ({id, poster, smallPoster = false, classname}: MovieP
   return (
     <Pressable
       className={`active:opacity-90 px-2 ${classname}`}
+      onPress={() => router.push(`./movie/${id}`)} // Con push regresas a la pantalla anterior
     >
       <Image 
         source={{uri: poster}} 
