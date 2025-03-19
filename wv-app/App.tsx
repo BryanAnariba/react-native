@@ -28,7 +28,7 @@ export default function App() {
   return (
     <WebView
       style={styles.container}
-      source={{ uri: 'https://10.0.250.137:8443/HonduenviosJavaEnvironment/servlet/com.honduenvios.login' }}
+      source={{ uri: 'https://apps2.honduenvioshn.com:8443/HonduenviosJavaEnvironment/servlet/com.honduenvios.login' }}
       javaScriptEnabled={true}
       mediaPlaybackRequiresUserAction={false}
       allowFileAccess={true}
@@ -55,4 +55,4 @@ const styles = StyleSheet.create({
     flex: 1,
     marginTop: Constants.statusBarHeight,
   },
-})
+});

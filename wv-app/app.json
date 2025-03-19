@@ -4,7 +4,7 @@
     "slug": "wv-app",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/box.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
@@ -37,7 +37,7 @@
     },
     "extra": {
       "eas": {
-        "projectId": "28632a10-9c56-4715-a5d3-cd3d2bf4eddd"
+        "projectId": "8c2babbc-6d63-43ff-b539-de18c79ca017"
       }
     }
   }
